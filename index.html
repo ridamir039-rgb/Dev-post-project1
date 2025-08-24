@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroLearn | Neuroscience Education Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>NeuroLearn</span>
+                </div>
+                <nav>
+                    <ul id="nav-menu">
+                        <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                        <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                        <li><a href="#applications" class="nav-link" data-page="applications">Applications</a></li>
+                        <li><a href="#resources" class="nav-link" data-page="resources">Resources</a></li>
+                        <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <div class="container">
+                    <h1>Exploring Neuroscience Applications</h1>
+                    <p>Discover how neuroscience is transforming technology, healthcare, and education through case studies, research, and interactive learning.</p>
+                    <a href="#applications" class="btn nav-link" data-page="applications">Explore Applications</a>
+                    <a href="#quiz" class="btn btn-outline">Take Assessment</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="features">
+                    <h2 class="section-title">Why Study Neuroscience?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-brain"></i>
+                            <h3>Understand the Brain</h3>
+                            <p>Learn about the most complex organ in the human body and how it shapes our thoughts, emotions, and behaviors.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-heartbeat"></i>
+                            <h3>Improve Mental Health</h3>
+                            <p>Discover how neuroscience research is leading to better treatments for mental health disorders.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-laptop-medical"></i>
+                            <h3>Neurotechnology</h3>
+                            <p>Explore cutting-edge technologies that interface with the brain to restore function and enhance capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <h2 class="section-title">About NeuroLearn</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Mission</h2>
+                        <p>NeuroLearn is dedicated to making neuroscience accessible and engaging for everyone. We believe that understanding how the brain works is essential for addressing many of the challenges facing society today.</p>
+                        <p>Our platform brings together experts in neuroscience, education, and technology to create innovative learning experiences that inspire and inform.</p>
+                    </div>
+                    <div class="about-text">
+                        <h2>Our Vision</h2>
+                        <p>We envision a world where neuroscience literacy is widespread, leading to better mental health awareness, more effective educational strategies, and ethical development of neurotechnologies.</p>
+                        <p>Through our work, we hope to contribute to a future where brain disorders are better understood and treated, and where brain-inspired technologies enhance human potential.</p>
+                    </div>
+                </div>
+
+            
+            </div>
+        </section>
+
+        <!-- Applications Page -->
+        <section id="applications" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Neuroscience Applications</h2>
+                <div class="apps-grid">
+                    <div class="app-card">
+                        <div class="app-card-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Case Studies</h3>
+                        </div>
+                        <div class="app-card-body">
+                            <p>Explore real-world applications of neuroscience in various industries with detailed case studies.</p>
+                        </div>
+                        <div class="app-card-footer">
+                            <button class="learn-more" data-app="case-study">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="app-card">
+                        <div class="app-card-header">
+                            <i class="fas fa-flask"></i>
+                            <h3>Research Papers</h3>
+                        </div>
+                        <div class="app-card-body">
+                            <p>Dive into the latest neuroscience research and discoveries that are shaping our understanding of the brain.</p>
+                        </div>
+                        <div class="app-card-footer">
+                            <button class="learn-more" data-app="research">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="app-card">
+                        <div class="app-card-header">
+                            <i class="fas fa-vr-cardboard"></i>
+                            <h3>Simulations</h3>
+                        </div>
+                        <div class="app-card-body">
+                            <p>Experience interactive simulations that demonstrate neural processes and brain functions.</p>
+                        </div>
+                        <div class="app-card-footer">
+                            <button class="learn-more" data-app="simulations">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study Details -->
+                <div class="app-detail" id="case-study-detail">
+                    <div class="detail-header">
+                        <h2>Case Studies in Neuroscience</h2>
+                        <button class="close-detail">&times;</button>
+                    </div>
+                    <div class="detail-content">
+                        <p>Neuroscience case studies provide valuable insights into how our understanding of the brain is applied in real-world scenarios. These studies bridge the gap between theoretical knowledge and practical applications.</p>
+                        
+                        <h3>Neuroprosthetics: Restoring Movement</h3>
+                        <p>This case study explores how brain-computer interfaces have enabled paralyzed patients to control robotic limbs using their thoughts. The technology reads neural signals and translates them into movements.</p>
+                        
+                        <h3>AI and Neural Networks</h3>
+                        <p>Discover how insights from the human brain have inspired the development of artificial neural networks, leading to breakthroughs in machine learning and pattern recognition.</p>
+                        
+                        <h3>Treating Depression with Neuromodulation</h3>
+                        <p>Learn about deep brain stimulation techniques that have shown remarkable success in treating patients with treatment-resistant depression.</p>
+                    </div>
+                    
+                    <div class="quiz-container">
+                        <div class="quiz-header">
+                            <h3>Test Your Knowledge: Case Studies Quiz</h3>
+                            <p>Answer these questions to evaluate your understanding and get personalized recommendations.</p>
+                        </div>
+                        
+                        <div class="quiz-progress">
+                            <div class="quiz-progress-bar" id="case-study-progress"></div>
+                        </div>
+                        
+                        <div class="quiz-question">
+                            <p id="case-study-question">1. What technology allows paralyzed patients to control robotic limbs with their thoughts?</p>
+                        </div>
+                        
+                        <ul class="quiz-options" id="case-study-options">
+                            <li data-value="a">a) Magnetic Resonance Imaging (MRI)</li>
+                            <li data-value="b">b) Brain-Computer Interfaces (BCI)</li>
+                            <li data-value="c">c) Electroconvulsive Therapy (ECT)</li>
+                            <li data-value="d">d) Positron Emission Tomography (PET)</li>
+                        </ul>
+                        
+                        <div class="quiz-nav">
+                            <button class="quiz-btn" id="prev-case-study" disabled>Previous</button>
+                            <button class="quiz-btn" id="next-case-study">Next Question</button>
+                        </div>
+                        
+                        <div class="quiz-result" id="case-study-result"></div>
+                        
+                        <div class="recommendations" id="case-study-recommendations">
+                            <h3>Personalized Recommendations</h3>
+                            <div class="recommendation-card">
+                                <h4>Mental Health Practice</h4>
+                                <p>Based on your quiz results, we recommend daily mindfulness meditation to improve focus and reduce stress.</p>
+                            </div>
+                            <div class="recommendation-card">
+                                <h4>Learning Strategy</h4>
+                                <p>Consider using spaced repetition techniques to enhance your memory retention of neuroscience concepts.</p>
+                            </div>
+                            <div class="recommendation-card">
+                                <h4>Lifestyle Adjustment</h4>
+                                <p>Ensure you're getting 7-9 hours of quality sleep nightly to support optimal brain function and memory consolidation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Papers Details -->
+                <div class="app-detail" id="research-detail">
+                    <div class="detail-header">
+                        <h2>Neuroscience Research Papers</h2>
+                        <button class="close-detail">&times;</button>
+                    </div>
+                    <div class="detail-content">
+                        <p>Cutting-edge research is continuously expanding our understanding of the brain. Explore the latest findings and breakthroughs in neuroscience.</p>
+                        
+                        <h3>Neuroplasticity: Rewiring the Brain</h3>
+                        <p>Recent studies have demonstrated the brain's remarkable ability to reorganize itself by forming new neural connections throughout life, challenging the notion of fixed brain structure.</p>
+                        
+                        <h3>Sleep and Memory Consolidation</h3>
+                        <p>Research has shown that sleep plays a crucial role in memory formation and consolidation, with different sleep stages contributing to various types of memory processing.</p>
+                        
+                        <h3>Connectomics: Mapping Neural Pathways</h3>
+                        <p>Advanced imaging techniques are enabling scientists to create comprehensive maps of neural connections, providing insights into how brain regions communicate.</p>
+                    </div>
+                    
+                    <div class="quiz-container">
+                        <div class="quiz-header">
+                            <h3>Test Your Knowledge: Research Quiz</h3>
+                            <p>Answer these questions to evaluate your understanding and get personalized recommendations.</p>
+                        </div>
+                        
+                        <div class="quiz-progress">
+                            <div class="quiz-progress-bar" id="research-progress"></div>
+                        </div>
+                        
+                        <div class="quiz-question">
+                            <p id="research-question">1. What term describes the brain's ability to form new neural connections throughout life?</p>
+                        </div>
+                        
+                        <ul class="quiz-options" id="research-options">
+                            <li data-value="a">a) Neurogenesis</li>
+                            <li data-value="b">b) Neuroplasticity</li>
+                            <li data-value="c">c) Neural Darwinism</li>
+                            <li data-value="d">d) Neurotransmission</li>
+                        </ul>
+                        
+                        <div class="quiz-nav">
+                            <button class="quiz-btn" id="prev-research" disabled>Previous</button>
+                            <button class="quiz-btn" id="next-research">Next Question</button>
+                        </div>
+                        
+                        <div class="quiz-result" id="research-result"></div>
+                        
+                        <div class="recommendations" id="research-recommendations">
+                            <h3>Personalized Recommendations</h3>
+                            <div class="recommendation-card">
+                                <h4>Mental Health Practice</h4>
+                                <p>Based on your quiz results, we recommend trying neurofeedback training to enhance self-regulation of brain function.</p>
+                            </div>
+                            <div class="recommendation-card">
+                                <h4>Learning Strategy</h4>
+                                <p>Consider incorporating multisensory learning techniques to engage different parts of your brain simultaneously.</p>
+                            </div>
+                            <div class="recommendation-card">
+                                <h4>Lifestyle Adjustment</h4>
+                                <p>Regular aerobic exercise has been shown to promote neurogenesis - aim for at least 150 minutes per week.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simulations Details -->
+                <div class="app-detail" id="simulations-detail">
+                    <div class="detail-header">
+                        <h2>Neuroscience Simulations</h2>
+                        <button class="close-detail">&times;</button>
+                    </div>
+                    <div class="detail-content">
+                        <p>Interactive simulations provide powerful tools for understanding complex neural processes and brain functions through visual and experiential learning.</p>
+                        
+                        <h3>Neural Network Simulation</h3>
+                        <p>This simulation demonstrates how neurons communicate through electrical and chemical signals, showing the propagation of action potentials and synaptic transmission.</p>
+                        
+                        <h3>fMRI Data Visualization</h3>
+                        <p>Explore how functional magnetic resonance imaging (fMRI) tracks brain activity by detecting changes in blood flow, allowing researchers to see which brain areas are active during specific tasks.</p>
+                        
+                        <h3>Virtual Brain Model</h3>
+                        <p>Navigate through a detailed 3D model of the human brain, exploring different regions and their functions, from the amygdala's role in emotion to the hippocampus's function in memory.</p>
+                    </div>
+                    
+                    <div class="quiz-container">
+                        <div class="quiz-header">
+                            <h3>Test Your Knowledge: Simulations Quiz</h3>
+                            <p>Answer these questions to evaluate your understanding and get personalized recommendations.</p>
+                        </div>
+                        
+                        <div class="quiz-progress">
+                            <div class="quiz-progress-bar" id="simulations-progress"></div>
+                        </div>
+                        
+                        <div class="quiz-question">
+                            <p id="simulations-question">1. What does fMRI measure to track brain activity?</p>
+                        </div>
+                        
+                        <ul class="quiz-options" id="simulations-options">
+                            <li data-value="a">a) Electrical activity directly from neurons</li>
+                            <li data-value="b">b) Changes in blood flow and oxygenation</li>
+                            <li data-value="c">c) Temperature variations in brain regions</li>
+                            <li data-value="d">d) Chemical composition of cerebrospinal fluid</li>
+                        </ul>
+                        
+                        <div class="quiz-nav">
+                            <button class="quiz-btn" id="prev-simulations" disabled>Previous</button>
+                            <button class="quiz-btn" id="next-simulations">Next Question</button>
+                        </div>
+                        
+                        <div class="quiz-result" id="simulations-result"></div>
+                        
+                        <div class="recommendations" id="simulations-recommendations">
+                            <h3>Personalized Recommendations</h3>
+                            <div class="recommendation-card">
+                                <h4>Mental Health Practice</h4>
+                                <p>Based on your quiz results, we recommend practicing visualization techniques to strengthen neural pathways.</p>
+                            </div>
+                            <div class="recommendation-card">
+                                <h4>Learning Strategy</h4>
+                                <p>Try using interactive 3D brain apps to better understand neuroanatomy and brain function relationships.</p>
+                            </div>
+                            <div class="recommendation-card">
+                                <h4>Lifestyle Adjustment</h4>
+                                <p>Reduce screen time before bed to improve sleep quality, which is essential for memory consolidation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Page -->
+        <section id="resources" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Learning Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Books">
+                        <div class="resource-card-content">
+                            <h3>Recommended Books</h3>
+                            <p>Explore our curated list of neuroscience books for beginners to advanced learners.</p>
+                            <a href="#">View List <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Online Courses">
+                        <div class="resource-card-content">
+                            <h3>Online Courses</h3>
+                            <p>Discover the best online courses to expand your knowledge of neuroscience.</p>
+                            <a href="#">Explore Courses <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Research Papers">
+                        <div class="resource-card-content">
+                            <h3>Research Papers</h3>
+                            <p>Access a collection of seminal research papers in neuroscience.</p>
+                            <a href="#">Browse Papers <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Podcasts">
+                        <div class="resource-card-content">
+                            <h3>Podcasts & Videos</h3>
+                            <p>Listen to neuroscience podcasts and watch educational videos from experts.</p>
+                            <a href="#">Watch & Listen <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tools">
+                        <div class="resource-card-content">
+                            <h3>Tools & Software</h3>
+                            <p>Find software and tools used by neuroscientists for data analysis and visualization.</p>
+                            <a href="#">Explore Tools <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Community">
+                        <div class="resource-card-content">
+                            <h3>Community Forums</h3>
+                            <p>Join discussions with other neuroscience enthusiasts and professionals.</p>
+                            <a href="#">Join Conversation <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Islamabad, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(+92)-3095091714</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ridamir039@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Monday-Friday: 9am-5pm</p>
+                                <p>Saturday: 10am-2pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About NeuroLearn</h3>
+                    <p>NeuroLearn is an educational platform dedicated to making neuroscience accessible and engaging through interactive learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#home" class="nav-link" data-page="home" style="color:#2c2c54;">Home</a></p>
+                    <p><a href="#about" class="nav-link" data-page="about" style="color:#2c2c54;">About</a></p>
+                    <p><a href="#applications" class="nav-link" data-page="applications" style="color:#2c2c54;">Applications</a></p>
+                    <p><a href="#resources" class="nav-link" data-page="resources" style="color:#2c2c54;">Resources</a></p>
+                    <p><a href="#contact" class="nav-link" data-page="contact" style="color:#2c2c54;">Contact</a></p>
+                </div>
+              
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NeuroLearn. All rights reserved. Created for Neurovia Hacks Hackathon.</p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
